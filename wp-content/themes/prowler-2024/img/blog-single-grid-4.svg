@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1728px" height="566px" viewBox="0 0 1728 566" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>blog-single-grid</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5" stroke-opacity="0.5">
+        <g id="Group" transform="translate(-41, 0.3564)" stroke="#030921">
+            <path d="M1810,1133 L0,1133 L0,0 L1810,0 L1810,1133 Z M0.262281148,1132.70982 L1809.74992,1132.70982 L1809.74992,0.283251112 L0.262281148,0.283251112 L0.262281148,1132.70982 Z" id="Shape" stroke-width="0.500154744"></path>
+            <polygon id="Path" stroke-width="0.500154744" points="1810 0 0 0 0 1132 1810 1132"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="1584 141 225 141 225 992 1584 992"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="1472 211 338 211 338 921 1472 921"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="1359 282 450 282 450 851 1359 851"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="1247 352 563 352 563 780 1247 780"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="1134 423 675 423 675 710 1134 710"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="1021 493 788 493 788 639 1021 639"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="787.864014 493 0 0.251483006 0.125887092 0 788 492.748137"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="1021.12599 493 1021 492.748137 1808.88001 0 1809 0.251483006"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="904.631 0 904.369 0 904.369 493 904.631 493"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="787.926003 527 0 287.273546 0.0733973175 287 788 526.726454"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="1021.063 527 1021 526.726454 1808.94 287 1809 287.273546"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="963.200163 493 963 492.812078 1327.79984 0 1328 0.178155896"></polygon>
+            <polygon id="Path" stroke-width="0.500154744" points="845.800842 493 481 0.178155896 481.200159 0 846 492.812078"></polygon>
+            <line x1="112" y1="71" x2="1698" y2="71" id="Path-2" stroke-width="0.5"></line>
+        </g>
+    </g>
+</svg>

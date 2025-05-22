@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1728px" height="566px" viewBox="0 0 1728 566" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>newsroom-hero-grid</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="newsroom-hero-grid" transform="translate(-42, 0.3564)">
+            <rect id="Rectangle" fill="#030921" x="0" y="0.643555" width="1811" height="1132"></rect>
+            <g id="Group" opacity="0.5" transform="translate(1, 0)" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="0.5">
+                <path d="M1809.44,1132.28356 L0,1132.28356 L0,-7.88258347e-15 L1809.44,-7.88258347e-15 L1809.44,1132.28356 Z M0.2622,1131.99356 L1809.19,1131.99356 L1809.19,0.283072 L0.2622,0.283072 L0.2622,1131.99356 Z" id="Shape"></path>
+                <polygon id="Path" points="1809.32 0.146729 0.1367 0.146729 0.1367 1132.14356 1809.32 1132.14356"></polygon>
+                <polygon id="Path" points="1696.76 70.579355 112.6983 70.579355 112.6983 1061.71356 1696.76 1061.71356"></polygon>
+                <polygon id="Path" points="1584.18 141.001555 225.261 141.001555 225.261 991.275555 1584.18 991.275555"></polygon>
+                <polygon id="Path" points="1471.62 211.433555 337.822 211.433555 337.822 920.842555 1471.62 920.842555"></polygon>
+                <polygon id="Path" points="1359.06 281.866555 450.395 281.866555 450.395 850.410555 1359.06 850.410555"></polygon>
+                <polygon id="Path" points="1246.5 352.298555 562.957 352.298555 562.957 779.988555 1246.5 779.988555"></polygon>
+                <polygon id="Path" points="1133.93 422.730555 675.519 422.730555 675.519 709.555555 1133.93 709.555555"></polygon>
+                <polygon id="Path" points="1021.373 493.163555 788.091 493.163555 788.091 639.123555 1021.373 639.123555"></polygon>
+                <polygon id="Path" points="788.018 493.289555 0.0734 0.272616 0.1993 0.020996 788.154 493.037555"></polygon>
+                <polygon id="Path" points="1021.427 493.289555 1021.301 493.037555 1809.26 0.020996 1809.38 0.272616"></polygon>
+                <polygon id="Path" points="904.859 0.146729 904.597 0.146729 904.597 493.163555 904.859 493.163555"></polygon>
+                <polygon id="Path" points="788.05 526.094555 0.0947 286.846555 0.1681 286.573555 788.123 525.821555"></polygon>
+                <polygon id="Path" points="1021.395 526.094555 1021.332 525.821555 1809.29 286.573555 1809.35 286.846555"></polygon>
+                <polygon id="Path" points="963.478 493.257555 963.278 493.069555 1327.78 0.052491 1327.98 0.230721"></polygon>
+                <polygon id="Path" points="845.977 493.257555 481.467 0.230721 481.666 0.052491 846.176 493.069555"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
