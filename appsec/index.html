@@ -1287,14 +1287,13 @@
 
 	<div id="page" class="min-h-screen flex flex-col" x-data="scrollDirection">
 
-
 		<header x-data="header" x-show="scroll_dir != 'down'" x-transition:enter="transition ease-out duration-700"
 			x-transition:enter-start="-translate-y-full opacity-0" x-transition:enter-end="translate-y-0 opacity-100"
 			x-transition:leave="transition ease-out duration-700" x-transition:leave-start="translate-y-0 opacity-100"
 			x-transition:leave-end="-translate-y-full opacity-0" class="header fixed z-40 w-full flex group" :class="{
-    'bg-dark is-stuck': scroll_dir == 'up' || window.pageYOffset > 0,
-    'is-not-stuck': scroll_dir != 'up',
-    'has-open-mobile-nav': mobile_nav_open,
+            'bg-dark is-stuck': scroll_dir == 'up' || window.pageYOffset > 0,
+            'is-not-stuck': scroll_dir != 'up',
+            'has-open-mobile-nav': mobile_nav_open,
         }">
 			<div class="page-wrapper w-full flex justify-center">
 				<div class="flex max-nav:justify-between nav:grid grid-cols-3 w-full max-lg:relative">
@@ -1328,32 +1327,31 @@
 								<line x1="27.7071" y1="1.70711" x2="1.54415" y2="27.8701" stroke="currentColor"
 									stroke-width="2" />
 							</svg>
-
 						</a>
 					</div>
 
-					<div class="nav:grid col-start-1 col-span-3 grid-cols-3 row-start-1 max-nav:justify-between max-nav:gap-x-5 flex  max-lg:flex-col max-lg:top-full max-lg:absolute max-lg:right-0 max-sm:w-screen max-sm:right-1/2 max-sm:translate-x-1/2 max-lg:bg-dark max-lg:overflow-y-scroll max-h-[calc(100dvh-62px)] text-white"
+					<div class="nav:grid col-start-1 col-span-3 grid-cols-3 row-start-1 max-nav:justify-between max-nav:gap-x-5 flex max-lg:flex-col max-lg:top-full max-lg:absolute max-lg:right-0 max-sm:w-screen max-sm:right-1/2 max-sm:translate-x-1/2 max-lg:bg-dark max-lg:overflow-y-scroll max-h-[calc(100dvh-62px)] text-white"
 						:class="mobile_nav_open ? 'is-open' : 'max-lg:hidden'">
 						<div id="primary-menu"
 							class="lg:col-span-3 lg:col-start-1 lg:row-start-1 lg:flex justify-center items-center">
 							<div class="menu-primary-menu-new-container">
 								<ul id="menu-primary-menu-new" class="font-mono uppercase">
-									<!-- <li id="menu-item-1573"
-										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1573">
-										<a href="https://docs.cosmicarmor.com/">Documentation</a>
-									</li>-->									<li id="menu-item-1636"
+									<li id="menu-item-1636"
 										class="is-dropdown is-label menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1636">
 										<a href="#">Product</a>
 										<ul class="sub-menu">
 											<li id="menu-item-1566"
-												class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1549 current_page_item menu-item-1566">
-												<a href="index.html" aria-current="page">Overview</a></li>
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1566">
+												<a href="../products/index.html">Overview</a>
+											</li>
 											<li id="menu-item-1634"
 												class="whitespace-nowrap menu-item menu-item-type-post_type menu-item-object-page menu-item-1634">
-												<a href="../aws-2/index.html">AWS + CosmicArmor</a></li>
+												<a href="../aws-2/index.html">AWS + CosmicArmor</a>
+											</li>
 											<li id="menu-item-1768"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1768">
-												<a target="_blank" href="../gcp/index.html">GCP + CosmicArmor</a></li>
+												<a target="_blank" href="../gcp/index.html">GCP + CosmicArmor</a>
+											</li>
 											<li id="menu-item-1772"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1772">
 												<a href="../azure/index.html">Azure + CosmicArmor</a>
@@ -1361,7 +1359,8 @@
 											<li id="menu-item-1568"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1568">
 												<a href="../appsec/index.html">Application Security</a>
-											</li>										</ul>
+											</li>
+										</ul>
 									</li>
 									<li id="menu-item-1637"
 										class="is-dropdown is-label menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1637">
@@ -1369,13 +1368,14 @@
 										<ul class="sub-menu">
 											<li id="menu-item-1569"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1569">
-												<a href="../about/index.html">About</a></li>
-											
+												<a href="../about/index.html">About</a>
+											</li>
 										</ul>
 									</li>
 									<li id="menu-item-1567"
 										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1567">
-										<a href="../contact/index.html">Contact</a></li>
+										<a href="../contact/index.html">Contact</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -1384,14 +1384,14 @@
 							class="lg:col-start-2 lg:col-span-2 lg:row-start-1 lg:flex lg:justify-end">
 							<div class="menu-toolbar-menu-container">
 								<ul id="menu-toolbar-menu" class="lg:flex gap-x-5 items-center font-mono uppercase">
-									<script async defer src="../../buttons.github.io/buttons.js"></script>
-									</li>
 									<li id="menu-item-1575"
 										class="is-button menu-item menu-item-type-custom menu-item-object-custom menu-item-1575">
-										<a href="https://cloud.cosmicarmor.com/sign-up">Sign Up</a></li>
+										<a href="https://cloud.cosmicarmor.com/sign-up">Sign Up</a>
+									</li>
 									<li id="menu-item-1576"
 										class="is-link menu-item menu-item-type-custom menu-item-object-custom menu-item-1576">
-										<a href="https://cloud.cosmicarmor.com/sign-in">Login ></a></li>
+										<a href="https://cloud.cosmicarmor.com/sign-in">Login ></a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -1402,8 +1402,6 @@
 
 		<div id="content" class="site-content">
 
-
-
 			<main class="relative">
 
 				<div
@@ -1412,398 +1410,321 @@
 				<div class="page-wrapper">
 					<article id="post-1549" class="post-1549 page type-page status-publish has-post-thumbnail hentry">
 
-
 						<div class="entry-content">
+							<!-- Hero Section -->
 							<div
 								class="block--hero relative pt-32 2xl:pt-28 mx-break-out px-break-out grid grid-cols-1 bg-dark min-h-[600px] lg:min-h-hero xl:min-h-screen overflow-x-hidden place-content-center pb-8">
 								<img fetchpriority="high" decoding="async" width="1728" height="1133"
-									src="../wp-content/uploads/about-hero-grid.svg"
-									class=" object-cover absolute inset-0 object-center h-full pointer-events-none w-full z-0 ar-landscape"
-									alt="about hero grid" />
+									src="../wp-content/uploads/hero-grid-large-center-trimmed.svg"
+									class="object-cover absolute inset-0 object-center h-full pointer-events-none w-full z-0 ar-landscape"
+									alt="Application Security Hero" />
 								<div class="relative z-10">
-
 									<div
 										class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
 										<div
 											class="wp-block-column flex flex-col justify-center is-layout-flow wp-block-column-is-layout-flow">
-											<h1 class="wp-block-heading">Powering the Cloud Security <mark
+											<h1 class="wp-block-heading">Secure Your Applications with <mark
 													x-data="{ visible: false }" x-intersect="visible = true"
 													class="c-highlight"
-													:class="{ 'is-visible': visible }"><span>movement</span></mark></h1>
-
-
-
-											<p class="max-w-lg">CosmicArmor allows organizations to secure their cloud
-												environments with transparency, flexibility, and collaboration.
-												CosmicArmor fits right into your workflow—whether you prefer the CLI or
-												our cloud platform, it’s the same trusted tool that keeps your
-												environment secure, exactly how you need it.</p>
-
-
-
+													:class="{ 'is-visible': visible }"><span>CosmicArmor</span></mark>
+											</h1>
+											<p class="max-w-lg">Protect your applications with CosmicArmor’s
+												comprehensive suite, featuring SAST, DAST, API Scanning, and SCA. Ensure
+												robust security across your development lifecycle with seamless
+												integration and real-time insights.</p>
 											<div
 												class="wp-block-buttons mt-8.5 is-layout-flex wp-block-buttons-is-layout-flex">
-
-
-
-												<div class="wp-block-button is-style-outline is-style-outline--2"><a
-														class="wp-block-button__link wp-element-button"
+												<div class="wp-block-button is-style-outline is-style-outline--2">
+													<a class="wp-block-button__link wp-element-button"
 														href="https://cloud.cosmicarmor.com/sign-up">Try CosmicArmor
-														Cloud Free</a></div>
+														Free</a>
+												</div>
 											</div>
 										</div>
-
-
-
 										<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-											<div class="aspect-[1097/1156] relative max-w-lg w-full"
-												x-data="{visible: false}" x-intersect.full="visible=true">
-												<div
-													class="w-[91.9%] rounded-full border-2 border-[#686B7A] aspect-square absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-												</div>
-
-												<div
-													class="bg-[#353A4D] rounded-full w-[61.9%] aspect-square absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-												</div>
-
-												<div
-													class="bg-[#545A6C] rounded-full w-[43.75%] aspect-square absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-												</div>
-
-
-												<div class="transition-all duration-[1s] ease-linear w-0.5 bg-[length:2px_16px] bg-[linear-gradient(0,_#6af400,_#6af400_50%,_transparent_50%)] h-0 bottom-1/2 left-1/2 absolute -translate-x-1/2"
-													:class="{ '!h-[40%]': visible }"></div>
-												<div class="transition duration-[500ms] delay-[400ms] opacity-0 rounded-full w-[13.7%] aspect-square bg-green absolute left-1/2 top-0 -translate-x-1/2 flex items-center justify-center"
-													:class="{ '!opacity-100': visible }">
-													<img decoding="async"
-														src="../wp-content/themes/prowler-2024/img/spoke-computer-icon.png"
-														class="max-w-[150px] w-[53%]">
-												</div>
-
-
-												<div class="transition-all duration-[1s] ease-linear rotate-180 origin-bottom w-0.5 bg-[length:2px_16px] bg-[linear-gradient(0,_#6af400,_#6af400_50%,_transparent_50%)] h-0 bottom-1/2 left-1/2 absolute -translate-x-1/2"
-													:class="{ '!h-[40%]': visible }"></div>
-												<div class="transition duration-[500ms] delay-[400ms] opacity-0 rounded-full w-[13.7%] aspect-square bg-green absolute left-1/2 bottom-0 -translate-x-1/2 flex items-center justify-center"
-													:class="{ '!opacity-100': visible }">
-													<img decoding="async"
-														src="../wp-content/themes/prowler-2024/img/spoke-cloud-upload-icon.png"
-														class="max-w-[150px] w-[53%]">
-												</div>
-
-
-												<div class="transition-all duration-[1s] ease-linear delay-[0.9s] rotate-[60deg] origin-bottom w-0.5 bg-white h-0 bottom-1/2 left-1/2 absolute -translate-x-1/2"
-													:class="{ '!h-[40%]': visible }"></div>
-												<div class="transition duration-[500ms] delay-[1.3s] opacity-0 rounded-full w-[13.7%] aspect-square bg-white absolute left-[89.4%] top-[28.4%] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-													:class="{ '!opacity-100': visible }">
-													<div
-														class="w-[153%] border-white rounded-full aspect-square absolute border left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-													</div>
-													<img decoding="async"
-														src="../wp-content/themes/prowler-2024/img/spoke-azure-logo.png"
-														class="max-w-[150px] w-[53%]">
-												</div>
-
-
-												<div class="transition-all duration-[1s] ease-linear delay-[1.8s] rotate-[120deg] origin-bottom w-0.5 bg-white h-0 bottom-1/2 left-1/2 absolute -translate-x-1/2"
-													:class="{ '!h-[40%]': visible }"></div>
-												<div class="transition duration-[500ms] delay-[2.1s] opacity-0 rounded-full w-[13.7%] aspect-square bg-white absolute left-[89.4%] top-[72%] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-													:class="{ '!opacity-100': visible }">
-													<div
-														class="w-[153%] border-white rounded-full aspect-square absolute border left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-													</div>
-													<div></div>
-													<img decoding="async"
-														src="../wp-content/themes/prowler-2024/img/spoke-google-cloud-logo.png"
-														class="max-w-[150px] w-[53%]">
-												</div>
-
-
-												<div class="transition-all duration-[1s] ease-linear delay-[1.8s] rotate-[-60deg] origin-bottom w-0.5 bg-white h-0 bottom-1/2 left-1/2 absolute -translate-x-1/2"
-													:class="{ '!h-[40%]': visible }"></div>
-												<div class="transition duration-[500ms] delay-[2.1s] opacity-0 rounded-full w-[13.7%] aspect-square bg-white absolute left-[10.1%] top-[28.4%] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-													:class="{ '!opacity-100': visible }">
-													<div
-														class="w-[153%] border-white rounded-full aspect-square absolute border left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-													</div>
-													<img decoding="async"
-														src="../wp-content/themes/prowler-2024/img/spoke-aws-logo.png"
-														class="max-w-[150px] w-[53%]">
-												</div>
-
-
-												<div class="transition-all duration-[1s] ease-linear delay-[0.9s] rotate-[-120deg] origin-bottom w-0.5 bg-white h-0 bottom-1/2 left-1/2 absolute -translate-x-1/2"
-													:class="{ '!h-[40%]': visible }"></div>
-												<div class="transition duration-[500ms] delay-[1.3s] opacity-0 rounded-full w-[13.7%] aspect-square bg-white absolute left-[10.1%] top-[72%] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-													:class="{ '!opacity-100': visible }">
-													<div></div>
-													<div
-														class="w-[153%] border-white rounded-full aspect-square absolute border left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-													</div>
-													<img decoding="async"
-														src="../wp-content/themes/prowler-2024/img/spoke-kubernetes-logo.png"
-														class="max-w-[150px] w-[53%]">
-												</div>
-
-
-												<div
-													class="bg-dark rounded-full flex items-center justify-center border-2 border-white w-[25.8%] aspect-square absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-													<img decoding="async"
-														src="../wp-content/themes/prowler-2024/img/web-logo-prowler-p.png"
-														class="max-w-[150px] w-[53%]">
-												</div>
-
-
-											</div>
-
+											<figure class="wp-block-image size-full">
+												<img decoding="async"
+													src="../wp-content/uploads/footer-stack-security-2.png"
+													alt="Application Security Dashboard"
+													class="wp-image-app-security" />
+											</figure>
 										</div>
 									</div>
-
 								</div>
 							</div>
 
-
+							<!-- Ticker Section -->
 							<div
 								class="block--ticker bg-purple mx-break-out font-mono uppercase py-4 text-white overflow-hidden relative z-10">
 								<div x-data="marquee(0.5)" @resize.window.debounce.100ms="resize"
 									class="w-full inline-flex gap-x-8 flex-nowrap items-stretch animate-scrolling hover:[animation-play-state:paused]">
-									<span class="whitespace-nowrap">Get Started Easily</span>
-									<span class="text-green">&gt;&gt;</span>
-									<span class="whitespace-nowrap">Drive Security Innovation</span>
-									<span class="text-green">&gt;&gt;</span>
-									<span class="whitespace-nowrap">Stay Ahead of Threats</span>
-									<span class="text-green">&gt;&gt;</span>
+									<span class="whitespace-nowrap">Automated SAST for Early Detection</span>
+									<span class="text-green">>></span>
+									<span class="whitespace-nowrap">Real-time DAST Protection</span>
+									<span class="text-green">>></span>
+									<span class="whitespace-nowrap">Secure APIs with Advanced Scanning</span>
+									<span class="text-green">>></span>
+									<span class="whitespace-nowrap">SCA for Open-Source Risk Management</span>
+									<span class="text-green">>></span>
 								</div>
 							</div>
 
-
-
-
+							<!-- Features Section -->
 							<div class="wp-block-group mb-50 mt-35">
 								<div
 									class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
-									<h2 class="wp-block-heading has-text-align-center mb-22">Get more of what you want
-										with CosmicArmor</h2>
-
-
-
+									<h2 class="wp-block-heading has-text-align-center mb-22">Application Security
+										Features</h2>
 									<div
-										class="wp-block-group c-card-grid c-card-grid--2-up js-tailcraft-animate max-w-3xl mx-auto">
+										class="wp-block-group c-card-grid c-card-grid--2-up js-tailcraft-animate max-w-6xl mx-auto">
 										<div
 											class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+											<!-- Row 1: SAST Card -->
 											<div class="block--icon-card bg-slate-800 rounded-2.5xl md:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] count--1 delay-0 pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
 												:class="{ '!translate-y-0 !opacity-100': animate }">
 												<div
 													class="self-end rounded-full bg-dark flex size-25 justify-center items-center mb-10">
-													<img decoding="async" width="76" height="52"
-														src="../wp-content/uploads/cloud-lock-icon.svg"
-														class=" ar-landscape" alt="cloud lock icon" />
+													<svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+														stroke="#6af400" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+														<path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+													</svg>
 												</div>
-												<h4 class="text-white text-xl">Cloud Security</h4>
-												<p>CosmicArmor Hosted (SaaS) delivers transparent, enterprise-grade cloud security solutions.</p>
+												<h4 class="text-white text-xl">SAST</h4>
+												<p>Static Application Security Testing scans source code to identify
+													vulnerabilities like insecure coding patterns before deployment.
+													Supports languages including Java, Python, and JavaScript, with
+													seamless integration into IDEs (e.g., VS Code) and CI/CD pipelines
+													(e.g., Jenkins, GitHub Actions). Provides detailed reports with
+													remediation guidance to ensure secure development from the start.
+												</p>
 											</div>
-
-
-
+											<!-- Row 1: DAST Card -->
 											<div class="block--icon-card bg-slate-800 rounded-2.5xl md:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] count--2 delay-250 pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
 												:class="{ '!translate-y-0 !opacity-100': animate }">
 												<div
 													class="self-end rounded-full bg-dark flex size-25 justify-center items-center mb-10">
-													<img loading="lazy" decoding="async" width="64" height="64"
-														src="../wp-content/uploads/lightbulb-icon.svg"
-														class=" ar-square" alt="lightbulb icon" />
+													<svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+														stroke="#6af400" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+														</path>
+													</svg>
 												</div>
-												<h4 class="text-white text-xl">Collaborative Innovation</h4>
-												<p>The CosmicArmor community drives continuous improvement, ensuring the
-													platform adapts to evolving cloud services, features, and security
-													threats.</p>
+												<h4 class="text-white text-xl">DAST</h4>
+												<p>Dynamic Application Security Testing probes running applications to
+													detect runtime vulnerabilities, such as cross-site scripting (XSS),
+													SQL injection, and broken authentication. Simulates real-world
+													attack scenarios with customizable test profiles. Integrates with
+													staging and production environments, delivering actionable insights
+													to harden applications against threats.</p>
 											</div>
-
-
-
+											<!-- Row 2: API Scanning Card -->
 											<div class="block--icon-card bg-slate-800 rounded-2.5xl md:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] count--3 delay-500 pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
 												:class="{ '!translate-y-0 !opacity-100': animate }">
 												<div
 													class="self-end rounded-full bg-dark flex size-25 justify-center items-center mb-10">
-													<img loading="lazy" decoding="async" width="45" height="84"
-														src="../wp-content/uploads/flow-icon.svg" class=" ar-portrait"
-														alt="flow icon" />
+													<svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+														stroke="#6af400" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
+														</path>
+													</svg>
 												</div>
-												<h4 class="text-white text-xl">Flexibility and Customization</h4>
-												<p>The CosmicArmor team drives ongoing innovation, ensuring the platform adapts to evolving cloud services, features, and security threats.</p>
+												<h4 class="text-white text-xl">API Scanning</h4>
+												<p>Automated API Scanning identifies misconfigurations, authentication
+													flaws, and data exposure risks in REST and GraphQL APIs. Supports
+													OpenAPI and Postman specifications for comprehensive testing.
+													Continuously monitors API endpoints, ensuring compliance with OWASP
+													API Security Top 10 and protecting sensitive data from modern
+													threats.</p>
 											</div>
-
-
-
+											<!-- Row 2: SCA Card -->
 											<div class="block--icon-card bg-slate-800 rounded-2.5xl md:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] count--4 delay-750 pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
 												:class="{ '!translate-y-0 !opacity-100': animate }">
 												<div
 													class="self-end rounded-full bg-dark flex size-25 justify-center items-center mb-10">
-													<img loading="lazy" decoding="async" width="65" height="65"
-														src="../wp-content/uploads/cog-with-turning-arrows-icon.svg"
-														class=" ar-square" alt="cog with turning arrows icon" />
+													<svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+														stroke="#6af400" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
+														</path>
+													</svg>
 												</div>
-												<h4 class="text-white text-xl">Efficiency and Automation</h4>
-												<p>CosmicArmor reduces manual overhead through automated security
-													assessments, compliance checks, and threat detection, saving time
-													and resources.</p>
+												<h4 class="text-white text-xl">SCA</h4>
+												<p>Software Composition Analysis scans open-source dependencies for
+													vulnerabilities and license risks. Supports ecosystems like npm,
+													Maven, and PyPI, with integration into build tools. Generates
+													compliance reports for frameworks like SOC 2 and GDPR, providing
+													actionable insights to maintain secure and compliant software.</p>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 
-
-
-							 <div class="wp-block-group e-lines-y e-break-out-to-lines">
-								<!-- <div
+							<!-- Integration Section -->
+							<div class="wp-block-group e-lines-y e-break-out-to-lines">
+								<div
 									class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
 									<div
 										class="wp-block-columns e-accent-divider py-32 is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
 										<div
 											class="wp-block-column flex flex-col justify-center items-center is-layout-flow wp-block-column-is-layout-flow">
-											<div class="wp-block-group">
+											<div class="wp-block-group max-w-96">
 												<div
 													class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
-
+													<h2 class="wp-block-heading">Seamless Integration</h2>
+													<p>CosmicArmor Security integrates effortlessly with CI/CD pipelines
+														(e.g.,
+														GitHub, Jenkins), DevOps tools (e.g., Jira, Slack), and cloud
+														platforms (e.g., AWS, Azure). Automate security checks, send
+														real-time alerts to SIEM/SOAR systems, and enforce compliance
+														with frameworks like SOC 2 and GDPR, enhancing your workflow
+														with unified visibility and rapid remediation.</p>
 												</div>
 											</div>
 										</div>
-
-
-
 										<div
 											class="wp-block-column flex justify-center is-layout-flow wp-block-column-is-layout-flow">
-											<figure
-												class="wp-block-image size-full flex justify-center items-center e-screenshot max-w-2xl">
-												<img decoding="async"
-													src="../wp-content/uploads/cosmic-armor-scan-overview-detailed.png"
-													alt="" class="wp-image-729" /></figure>
-										</div>
-									</div>
-								</div> -->
-							</div> 
-
-
-
-							<div class="wp-block-group mb-50 mt-35">
-								<div
-									class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
-									<h2 class="wp-block-heading has-text-align-center mb-22">When to Use CosmicArmor
-									</h2>
-
-
-
-									<div
-										class="wp-block-group c-card-grid c-card-grid--2-up js-tailcraft-animate max-w-6xl mx-auto">
-										<div
-											class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
-											<div class="block--text-card bg-slate-800 rounded-2.5xl count--1 remainder--1 delay-0 lg:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
-												:class="{ '!translate-y-0 !opacity-100': animate }">
-												<h4 class="text-white text-xl">Security Engineers</h4>
-												<p>CosmicArmor Open Source is perfect for security engineers who want to
-													dig into the CLI and run it on their own to deeply understand the
-													inner workings of the security checks and customize them as per
-													their organization&#8217;s needs.</p>
-											</div>
-
-
-
-											<div class="block--text-card bg-slate-800 rounded-2.5xl count--2 remainder--0 delay-500 lg:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
-												:class="{ '!translate-y-0 !opacity-100': animate }">
-												<h4 class="text-white text-xl">Hands-on Experimentation</h4>
-												<p>CosmicArmor enables security engineers to explore, contribute, and collaborate, enhancing cloud security capabilities together.</p>
-											</div>
-
-
-
-											<div class="block--text-card bg-slate-800 rounded-2.5xl count--3 remainder--1 delay-1000 lg:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
-												:class="{ '!translate-y-0 !opacity-100': animate }">
-												<h4 class="text-white text-xl">Integrating with Existing Workflows</h4>
-												<p>Security engineers can seamlessly integrate CosmicArmor into their existing security toolchain, scripts, and workflows, automating security assessments and monitoring as part of their DevSecOps practices.</p>
-											</div>
-
-
-
-											<div class="block--text-card bg-slate-800 rounded-2.5xl count--4 remainder--0 delay-1500 lg:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
-												:class="{ '!translate-y-0 !opacity-100': animate }">
-												<h4 class="text-white text-xl">Customized Reporting</h4>
-												<p>CosmicArmor empowers security engineers to generate customized reports and visualizations tailored to their organization’s specific security requirements and compliance needs.</p>
-											</div>
-
-
-
-											<div class="block--text-card bg-slate-800 rounded-2.5xl count--5 remainder--1 delay-2000 lg:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
-												:class="{ '!translate-y-0 !opacity-100': animate }">
-												<h4 class="text-white text-xl">Community Engagement</h4>
-												<p>By adopting CosmicArmor, security engineers can engage with a vibrant ecosystem, share insights, and help shape the future of cloud security tools.</p>
-											</div>
-
-
-
-											<div class="block--text-card bg-slate-800 rounded-2.5xl count--6 remainder--0 delay-2500 lg:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
-												:class="{ '!translate-y-0 !opacity-100': animate }">
-												<h4 class="text-white text-xl">Benefit from Intuitive Controls</h4>
-												<p>CosmicArmor Cloud provides easy-to-use, click-based controls that
-													enable you to quickly navigate, filter, and analyze your cloud
-													security data, making it simple to identify and address
-													vulnerabilities. </p>
-											</div>
-
-
-
-											<p></p>
+											<figure class="wp-block-image size-full e-screenshot max-w-2xl">
+												<svg width="600" height="400" viewBox="0 0 600 400" fill="none"
+													xmlns="http://www.w3.org/2000/svg" class="wp-image-integration">
+													<rect width="600" height="400" fill="#1e293b" />
+													<circle cx="150" cy="100" r="40" fill="#6af400" fill-opacity="0.2"
+														stroke="#6af400" stroke-width="2" />
+													<circle cx="300" cy="200" r="50" fill="#6af400" fill-opacity="0.2"
+														stroke="#6af400" stroke-width="2" />
+													<circle cx="450" cy="100" r="40" fill="#6af400" fill-opacity="0.2"
+														stroke="#6af400" stroke-width="2" />
+													<circle cx="200" cy="300" r="40" fill="#6af400" fill-opacity="0.2"
+														stroke="#6af400" stroke-width="2" />
+													<circle cx="400" cy="300" r="40" fill="#6af400" fill-opacity="0.2"
+														stroke="#6af400" stroke-width="2" />
+													<path d="M150 100 L300 200 L450 100" stroke="#6af400"
+														stroke-width="2" />
+													<path d="M150 100 L200 300 L300 200" stroke="#6af400"
+														stroke-width="2" />
+													<path d="M450 100 L400 300 L300 200" stroke="#6af400"
+														stroke-width="2" />
+													<path d="M200 300 L400 300" stroke="#6af400" stroke-width="2" />
+												</svg>
+											</figure>
 										</div>
 									</div>
 								</div>
 							</div>
 
-
-
+							<!-- Compliance Section -->
 							<div class="wp-block-group e-lines-y e-break-out-to-lines">
 								<div
 									class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
 									<div
-										class="wp-block-columns e-accent-divider py-32  e-reverse-columns is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex">
+										class="wp-block-columns e-accent-divider py-32 e-reverse-columns is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex">
 										<div
 											class="wp-block-column flex flex-col justify-center items-center is-layout-flow wp-block-column-is-layout-flow">
-											<div class="wp-block-group">
+											<div class="wp-block-group max-w-96">
 												<div
 													class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
-													<h2 class="wp-block-heading">CosmicArmor Cloud</h2>
-
-
-
-													<p class="max-w-96">CosmicArmor Cloud revolutionizes cloud security with enterprise-grade flexibility, empowering you to secure environments your way. It offers a fully managed solution, eliminating complex deployment and maintenance.</p>
+													<h2 class="wp-block-heading">Compliance Ready</h2>
+													<p>Stay ahead of regulatory demands with CosmicArmor’s automated
+														compliance engine. Achieve OWASP Top 10 protection against
+														vulnerabilities like XSS and broken access control. Meet PCI-DSS
+														v4.0 standards with firewall checks, encryption, and audit
+														trails, certified for Level 1–4 organizations. Ensure SOC 2 Type
+														II compliance through continuous monitoring of security,
+														availability, and confidentiality controls. Integrate with Jira,
+														Slack, and ServiceNow for real-time alerts, and generate
+														executive reports for GDPR, NIST, and CIS Benchmarks in minutes.
+													</p>
 												</div>
 											</div>
 										</div>
-
-
-
 										<div
 											class="wp-block-column flex flex-col justify-center items-center is-layout-flow wp-block-column-is-layout-flow">
-											<figure class="wp-block-image size-full e-screenshot"><img decoding="async"
-													src="../wp-content/uploads/cosmic-armor-dashboard.png" alt=""
-													class="wp-image-535" /></figure>
+											<figure class="wp-block-image size-full e-screenshot max-w-2xl">
+												<svg width="600" height="400" viewBox="0 0 600 400" fill="none"
+													xmlns="http://www.w3.org/2000/svg" class="wp-image-compliance">
+													<rect width="600" height="400" fill="#1e293b" />
+													<path
+														d="M200 100 L300 50 L400 100 L450 200 L400 300 L300 350 L200 300 L150 200 Z"
+														fill="#6af400" fill-opacity="0.2" stroke="#6af400"
+														stroke-width="3" />
+													<path d="M250 150 L280 180 L320 140" stroke="#ffffff"
+														stroke-width="4" stroke-linecap="round" />
+													<path d="M300 200 L330 230 L370 190" stroke="#ffffff"
+														stroke-width="4" stroke-linecap="round" />
+													<path d="M350 250 L380 280 L420 240" stroke="#ffffff"
+														stroke-width="4" stroke-linecap="round" />
+													<circle cx="300" cy="200" r="20" fill="#6af400" />
+												</svg>
+											</figure>
 										</div>
 									</div>
-
-
-
-									<h2 class="wp-block-heading has-text-align-center mb-22"></h2>
 								</div>
 							</div>
-						</div>
 
+							<!-- Use Cases Section -->
+							<div class="wp-block-group mb-50 mt-35">
+								<div
+									class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+									<h2 class="wp-block-heading has-text-align-center mb-22">When to Use Application
+										Security</h2>
+									<div
+										class="wp-block-group c-card-grid c-card-grid--2-up js-tailcraft-animate max-w-6xl mx-auto">
+										<div
+											class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+											<!-- Row 1: DevSecOps Teams -->
+											<div class="block--text-card bg-slate-800 rounded-2.5xl count--1 remainder--1 delay-0 lg:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
+												:class="{ '!translate-y-0 !opacity-100': animate }">
+												<h4 class="text-white text-xl">DevSecOps Teams</h4>
+												<p>Empower your DevSecOps with CosmicArmor’s seamless CI/CD integration.
+													Automate SAST and DAST scans in GitHub, Jenkins, or Azure DevOps,
+													catching vulnerabilities in IaC templates and container images
+													early. Prioritize risks with AI-driven attack path analysis and fix
+													issues directly in pull requests, slashing remediation time.
+													Integrate with Jira and Slack for real-time workflows, ensuring
+													secure, agile development.</p>
+											</div>
+											<!-- Row 1: API Developers -->
+											<div class="block--text-card bg-slate-800 rounded-2.5xl count--2 remainder--0 delay-500 lg:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
+												:class="{ '!translate-y-0 !opacity-100': animate }">
+												<h4 class="text-white text-xl">API Developers</h4>
+												<p>Safeguard your APIs with CosmicArmor’s automated scanning. Detect
+													misconfigurations, authentication flaws, and data leaks in REST and
+													GraphQL APIs, aligned with OWASP API Security Top 10. Support
+													OpenAPI and Postman specs with agentless, full-stack visibility.
+													Integrate with ServiceNow or GitLab for developer-friendly
+													remediation, ensuring secure endpoints without slowing innovation.
+												</p>
+											</div>
+											<!-- Row 2: Compliance Officers -->
+											<div class="block--text-card bg-slate-800 rounded-2.5xl count--3 remainder--1 delay-1000 lg:w-[calc(((1/2)*100%)-((1/2)*1.75rem))] pt-5 pb-10 px-6 flex flex-col transition ease-in duration-300 translate-y-5 opacity-0"
+												:class="{ '!translate-y-0 !opacity-100': animate }">
+												<h4 class="text-white text-xl">Compliance Officers</h4>
+												<p>Simplify audits with CosmicArmor’s compliance engine. Generate
+													real-time reports for OWASP, PCI-DSS v4.0, SOC 2, and GDPR, with
+													over 150 frameworks supported. Automate posture scoring and export
+													detailed assessments or executive summaries. Integrate with Splunk
+													or PagerDuty for continuous monitoring, ensuring adherence to
+													regulatory standards with minimal effort.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
 
 					</article>
 				</div>
 
 			</main>
 
-
 		</div>
-
 
 		<footer id="colophon" class="site-footer border-t border-divider-dark bg-dark text-white relative"
 			role="contentinfo">
@@ -1825,66 +1746,32 @@
 										access for <mark x-data="{ visible: false }" x-intersect="visible = true"
 											class="c-highlight" :class="{ 'is-visible': visible }"><span>15
 												Days</span></mark></h2>
-
-
-
 									<p class="mb-11 text-reverse">Get started with CosmicArmor in minutes.<br>Sign up
 										for a free 15-day trial.</p>
-
-
-
 									<div class="wp-block-group gap-7 is-layout-flex wp-block-group-is-layout-flex">
 										<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-											<div class="wp-block-button is-style-outline is-style-outline--3"><a
-													class="wp-block-button__link wp-element-button"
+											<div class="wp-block-button is-style-outline is-style-outline--3">
+												<a class="wp-block-button__link wp-element-button"
 													href="https://cloud.cosmicarmor.com/sign-up" target="_blank"
-													rel="noreferrer noopener">Start Your Free Trial</a></div>
+													rel="noreferrer noopener">Start Your Free Trial</a>
+											</div>
 										</div>
-
-
-
 									</div>
 								</div>
 							</div>
 						</div>
-
-
-
 						<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-							<p>
 							<div class="aspect-[1376/1284] relative max-w-2xl mx-auto" x-data="{ visible: false }"
 								x-intersect.full="visible = true">
-								<img decoding="async"
-									src="../wp-content/themes/prowler-2024/img/footer-stack-base-2.png"
+								<img decoding="async" src="../wp-content/uploads/app-security-stack.png"
 									class="absolute transition duration-700 delay-100 opacity-0 translate-y-10"
-									:class="{ '!opacity-100 !translate-y-0': visible }">
-								<img decoding="async"
-									src="../wp-content/themes/prowler-2024/img/footer-stack-severity-2.png"
-									class="absolute duration-700 delay-200 opacity-0 translate-y-10"
-									:class="{ '!opacity-100 !translate-y-0': visible }">
-								<img decoding="async"
-									src="../wp-content/themes/prowler-2024/img/footer-stack-status-2.png"
-									class="absolute duration-700 delay-300 opacity-0 translate-y-10"
-									:class="{ '!opacity-100 !translate-y-0': visible }">
-								<img decoding="async"
-									src="../wp-content/themes/prowler-2024/img/footer-stack-aws-account-2.png"
-									class="absolute duration-700 delay-[400ms] opacity-0 translate-y-10"
-									:class="{ '!opacity-100 !translate-y-0': visible }">
-								<img decoding="async"
-									src="../wp-content/themes/prowler-2024/img/footer-stack-security-2.png"
-									class="absolute duration-700 delay-[500ms] opacity-0 translate-y-10"
-									:class="{ '!opacity-100 !translate-y-0': visible }">
+									:class="{ '!opacity-100 !translate-y-0': visible }"
+									alt="Application Security Stack">
 							</div>
-							</p>
 						</div>
 					</div>
 				</section>
-			</aside><!-- .widget-area -->
-
-
-
-
-
+			</aside>
 
 			<div class="border-t border-white/30">
 				<div
@@ -1903,362 +1790,25 @@
 									class="is-social-media menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1560">
 									<a href="#">Socials</a>
 									<ul class="sub-menu">
-										<!-- <li id="menu-item-1561" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1561"><a href="https://www.linkedin.com/company/CosmicArmor-security/">LinkedIn</a></li> -->										<!-- <li id="menu-item-1562" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1562"><a href="#/">Slack</a></li> -->										<!-- <li id="menu-item-1561" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1561"><a href="#/">YouTube</a></li> -->										<!-- <li id="menu-item-1563" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1563"><a href="#/">X</a></li> -->									</ul>
+										<!-- Social links can be added here if needed -->
+									</ul>
 								</li>
 								<li id="menu-item-1565"
-									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1565"><a
-										href="../terms-of-service/index.html">Terms of Service</a></li>
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1565">
+									<a href="../terms-of-service/index.html">Terms of Service</a>
+								</li>
 								<li id="menu-item-1564"
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1564">
-									<a rel="privacy-policy" href="../privacy-policy/index.html">Privacy Policy</a></li>
+									<a rel="privacy-policy" href="../privacy-policy/index.html">Privacy Policy</a>
+								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="max-md:order-4">
-
-					</div>
+					<div class="max-md:order-4"></div>
 				</div>
 			</div>
 		</footer>
 
 	</div>
 
-	<div class="simple-banner simple-banner-text" style="display:none !important"></div>
-	<script>
-		(function (body) {
-			'use strict';
-			body.className = body.className.replace(/\btribe-no-js\b/, 'tribe-js');
-		})(document.body);
-	</script>
-	<!-- Matomo -->
-	<script>
-		var _paq = window._paq = window._paq || [];
-		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-		_paq.push(['setDownloadExtensions', 'png']);
-		_paq.push(['addDownloadExtensions', 'png']);
-		_paq.push(['trackPageView']);
-		_paq.push(['enableLinkTracking']);
-		(function () {
-			var u = "https://prowlerpro.matomo.cloud/";
-			_paq.push(['setTrackerUrl', u + 'matomo.php']);
-			_paq.push(['setSiteId', '5']);
-			var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-			g.async = true; g.src = '../../cdn.matomo.cloud/prowlerpro.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
-		})();
-	</script>
-	<!-- End Matomo Code -->
-	<script> /* <![CDATA[ */var tribe_l10n_datatables = { "aria": { "sort_ascending": ": activate to sort column ascending", "sort_descending": ": activate to sort column descending" }, "length_menu": "Show _MENU_ entries", "empty_table": "No data available in table", "info": "Showing _START_ to _END_ of _TOTAL_ entries", "info_empty": "Showing 0 to 0 of 0 entries", "info_filtered": "(filtered from _MAX_ total entries)", "zero_records": "No matching records found", "search": "Search:", "all_selected_text": "All items on this page were selected. ", "select_all_link": "Select all pages", "clear_selection": "Clear Selection.", "pagination": { "all": "All", "next": "Next", "previous": "Previous" }, "select": { "rows": { "0": "", "_": ": Selected %d rows", "1": ": Selected 1 row" } }, "datepicker": { "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"], "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "monthNamesShort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "monthNamesMin": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "nextText": "Next", "prevText": "Prev", "currentText": "Today", "closeText": "Done", "today": "Today", "clear": "Clear" } };/* ]]> */ </script>
-	<script>
-		const lazyloadRunObserver = () => {
-			const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
-			const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						let lazyloadBackground = entry.target;
-						if (lazyloadBackground) {
-							lazyloadBackground.classList.add('e-lazyloaded');
-						}
-						lazyloadBackgroundObserver.unobserve(entry.target);
-					}
-				});
-			}, { rootMargin: '200px 0px 200px 0px' });
-			lazyloadBackgrounds.forEach((lazyloadBackground) => {
-				lazyloadBackgroundObserver.observe(lazyloadBackground);
-			});
-		};
-		const events = [
-			'DOMContentLoaded',
-			'elementor/lazyload/observe',
-		];
-		events.forEach((event) => {
-			document.addEventListener(event, lazyloadRunObserver);
-		});
-	</script>
-	<script type="text/javascript">
-		/* MonsterInsights Scroll Tracking */
-		if (typeof (jQuery) !== 'undefined') {
-			jQuery(document).ready(function () {
-				function monsterinsights_scroll_tracking_load() {
-					if ((typeof (__gaTracker) !== 'undefined' && __gaTracker && __gaTracker.hasOwnProperty("loaded") && __gaTracker.loaded == true) || (typeof (__gtagTracker) !== 'undefined' && __gtagTracker)) {
-						(function (factory) {
-							factory(jQuery);
-						}(function ($) {
-
-							/* Scroll Depth */
-							"use strict";
-							var defaults = {
-								percentage: true
-							};
-
-							var $window = $(window),
-								cache = [],
-								scrollEventBound = false,
-								lastPixelDepth = 0;
-
-							/*
-							* Plugin
-							*/
-
-							$.scrollDepth = function (options) {
-
-								var startTime = +new Date();
-
-								options = $.extend({}, defaults, options);
-
-								/*
-								* Functions
-								*/
-
-								function sendEvent(action, label, scrollDistance, timing) {
-									if ('undefined' === typeof MonsterInsightsObject || 'undefined' === typeof MonsterInsightsObject.sendEvent) {
-										return;
-									}
-									var paramName = action.toLowerCase();
-									var fieldsArray = {
-										send_to: 'G-202YXLGT05',
-										non_interaction: true
-									};
-									fieldsArray[paramName] = label;
-
-									if (arguments.length > 3) {
-										fieldsArray.scroll_timing = timing
-										MonsterInsightsObject.sendEvent('event', 'scroll_depth', fieldsArray);
-									} else {
-										MonsterInsightsObject.sendEvent('event', 'scroll_depth', fieldsArray);
-									}
-								}
-
-								function calculateMarks(docHeight) {
-									return {
-										'25%': parseInt(docHeight * 0.25, 10),
-										'50%': parseInt(docHeight * 0.50, 10),
-										'75%': parseInt(docHeight * 0.75, 10),
-										/* Cushion to trigger 100% event in iOS */
-										'100%': docHeight - 5
-									};
-								}
-
-								function checkMarks(marks, scrollDistance, timing) {
-									/* Check each active mark */
-									$.each(marks, function (key, val) {
-										if ($.inArray(key, cache) === -1 && scrollDistance >= val) {
-											sendEvent('Percentage', key, scrollDistance, timing);
-											cache.push(key);
-										}
-									});
-								}
-
-								function rounded(scrollDistance) {
-									/* Returns String */
-									return (Math.floor(scrollDistance / 250) * 250).toString();
-								}
-
-								function init() {
-									bindScrollDepth();
-								}
-
-								/*
-								* Public Methods
-								*/
-
-								/* Reset Scroll Depth with the originally initialized options */
-								$.scrollDepth.reset = function () {
-									cache = [];
-									lastPixelDepth = 0;
-									$window.off('scroll.scrollDepth');
-									bindScrollDepth();
-								};
-
-								/* Add DOM elements to be tracked */
-								$.scrollDepth.addElements = function (elems) {
-
-									if (typeof elems == "undefined" || !$.isArray(elems)) {
-										return;
-									}
-
-									$.merge(options.elements, elems);
-
-									/* If scroll event has been unbound from window, rebind */
-									if (!scrollEventBound) {
-										bindScrollDepth();
-									}
-
-								};
-
-								/* Remove DOM elements currently tracked */
-								$.scrollDepth.removeElements = function (elems) {
-
-									if (typeof elems == "undefined" || !$.isArray(elems)) {
-										return;
-									}
-
-									$.each(elems, function (index, elem) {
-
-										var inElementsArray = $.inArray(elem, options.elements);
-										var inCacheArray = $.inArray(elem, cache);
-
-										if (inElementsArray != -1) {
-											options.elements.splice(inElementsArray, 1);
-										}
-
-										if (inCacheArray != -1) {
-											cache.splice(inCacheArray, 1);
-										}
-
-									});
-
-								};
-
-								/*
-								* Throttle function borrowed from:
-								* Underscore.js 1.5.2
-								* http://underscorejs.org
-								* (c) 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-								* Underscore may be freely distributed under the MIT license.
-								*/
-
-								function throttle(func, wait) {
-									var context, args, result;
-									var timeout = null;
-									var previous = 0;
-									var later = function () {
-										previous = new Date;
-										timeout = null;
-										result = func.apply(context, args);
-									};
-									return function () {
-										var now = new Date;
-										if (!previous) previous = now;
-										var remaining = wait - (now - previous);
-										context = this;
-										args = arguments;
-										if (remaining <= 0) {
-											clearTimeout(timeout);
-											timeout = null;
-											previous = now;
-											result = func.apply(context, args);
-										} else if (!timeout) {
-											timeout = setTimeout(later, remaining);
-										}
-										return result;
-									};
-								}
-
-								/*
-								* Scroll Event
-								*/
-
-								function bindScrollDepth() {
-
-									scrollEventBound = true;
-
-									$window.on('scroll.scrollDepth', throttle(function () {
-										/*
-										* We calculate document and window height on each scroll event to
-										* account for dynamic DOM changes.
-										*/
-
-										var docHeight = $(document).height(),
-											winHeight = window.innerHeight ? window.innerHeight : $window.height(),
-											scrollDistance = $window.scrollTop() + winHeight,
-
-											/* Recalculate percentage marks */
-											marks = calculateMarks(docHeight),
-
-											/* Timing */
-											timing = +new Date - startTime;
-
-										checkMarks(marks, scrollDistance, timing);
-									}, 500));
-
-								}
-
-								init();
-							};
-
-							/* UMD export */
-							return $.scrollDepth;
-
-						}));
-
-						jQuery.scrollDepth();
-					} else {
-						setTimeout(monsterinsights_scroll_tracking_load, 200);
-					}
-				}
-				monsterinsights_scroll_tracking_load();
-			});
-		}
-		/* End MonsterInsights Scroll Tracking */
-
-	</script>
-	<style id='block-style-variation-styles-inline-css' type='text/css'>
-		:root :where(.wp-block-button.is-style-outline--1 .wp-block-button__link) {
-			background: transparent none;
-			border-color: currentColor;
-			border-width: 2px;
-			border-style: solid;
-			color: currentColor;
-			padding-top: 0.667em;
-			padding-right: 1.33em;
-			padding-bottom: 0.667em;
-			padding-left: 1.33em;
-		}
-
-		:root :where(.wp-block-button.is-style-outline--2 .wp-block-button__link) {
-			background: transparent none;
-			border-color: currentColor;
-			border-width: 2px;
-			border-style: solid;
-			color: currentColor;
-			padding-top: 0.667em;
-			padding-right: 1.33em;
-			padding-bottom: 0.667em;
-			padding-left: 1.33em;
-		}
-
-		:root :where(.wp-block-button.is-style-outline--3 .wp-block-button__link) {
-			background: transparent none;
-			border-color: currentColor;
-			border-width: 2px;
-			border-style: solid;
-			color: currentColor;
-			padding-top: 0.667em;
-			padding-right: 1.33em;
-			padding-bottom: 0.667em;
-			padding-left: 1.33em;
-		}
-	</style>
-	<style id='core-block-supports-inline-css' type='text/css'>
-		.wp-container-core-columns-is-layout-1 {
-			flex-wrap: nowrap;
-		}
-
-		.wp-container-core-columns-is-layout-2 {
-			flex-wrap: nowrap;
-		}
-
-		.wp-container-core-columns-is-layout-3 {
-			flex-wrap: nowrap;
-		}
-
-		.wp-container-core-columns-is-layout-4 {
-			flex-wrap: nowrap;
-		}
-	</style>
-	<script type="text/javascript"
-		src="../wp-content/plugins/easy-pricing-tables-premium/includes/v4/blocks/table/table-frontend.minbfce.js?ver=4.1.0"
-		id="fca-ept4-frontend-js-js"></script>
-	<script type="text/javascript" id="rtec_scripts-js-extra">
-		/* <![CDATA[ */
-		var rtec = { "ajaxUrl": "https:\/\/prowler.com\/wp-admin\/admin-ajax.php", "checkForDuplicates": "1", "translations": { "honeypotClear": "I am not a robot" } };
-		/* ]]> */
-	</script>
-	<script type="text/javascript"
-		src="../wp-content/plugins/registrations-for-the-events-calendar/js/rtec-scripts88c3.js?ver=2.13.5"
-		id="rtec_scripts-js"></script>
-
 </body>
-
-
-</html>
