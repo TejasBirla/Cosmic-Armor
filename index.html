@@ -436,6 +436,69 @@
             color: var(--gray);
             font-size: 1rem;
         }
+        /* Resources Section */
+        .resources {
+            padding: 100px 0;
+            background: white;
+        }
+        .resources .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .resources .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .resources .section-header p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+        .resources .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .resources .service-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(93, 240, 57, 0.05);
+            transition: var(--transition);
+        }
+        .resources .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .resources .service-header {
+            padding: 25px;
+            background: #8de012;
+            color: white;
+        }
+        .resources .service-header h3 {
+            font-size: 1.5rem;
+        }
+        .resources .service-body {
+            padding: 25px;
+        }
+        .resources .service-body p {
+            margin-bottom: 20px;
+            color: var(--gray);
+        }
+        .resources .service-body a {
+            display: inline-block;
+            margin-top: 10px;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .resources .service-body a:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(23, 27, 23, 0.4);
+        }
 
         /* CTA Section */
         .cta {
@@ -616,7 +679,7 @@
                 <div class="nav-links">
                     <a href="#features">Features</a>
                     <a href="#services">Solutions</a>
-                    <!--<a href="#testimonials">Testimonials</a>-->
+                    <a href="#resources">Resources</a>
                     <a href="#about">About</a>
                     <a href="#contact">Contact</a>
                 </div>
@@ -766,6 +829,41 @@
             </div>
         </div>
     </section>
+    <!-- Resources Section -->
+     <section class="resources" id="resources">
+          <div class="container">
+                <div class="section-header">
+                     <h2>Resources</h2>
+                     <p>Explore our comprehensive resources for Cloud Security, CloudShield, and Application Security</p>
+                </div>
+                <div class="services-grid">
+                     <div class="feature-card">
+                          <div class="feature-icon">
+                                <i class="fas fa-file-alt"></i>
+                          </div>
+                          <h3>Cloud Security Data Sheet</h3>
+                          <p>Learn about our cloud security solutions and how they can protect your organization.</p>
+                          <a href="./pdf/CosmicArmor-CloudSecurity.pdf" class="btn btn-outline" download style="margin-top: 15px;">Download PDF</a>
+                     </div>
+                     <div class="feature-card">
+                          <div class="feature-icon">
+                                <i class="fas fa-file-alt"></i>
+                          </div>
+                          <h3>CloudShield Overview</h3>
+                          <p>Discover the features and benefits of CloudShield for your cloud infrastructure.</p>
+                          <a href="./pdf/CosmicArmor-CloudShield.pdf" class="btn btn-outline" download style="margin-top: 15px;">Download PDF</a>
+                     </div>
+                     <div class="feature-card">
+                          <div class="feature-icon">
+                                <i class="fas fa-file-alt"></i>
+                          </div>
+                          <h3>Application Security Guide</h3>
+                          <p>Get insights into securing your applications throughout the development lifecycle.</p>
+                          <a href="./pdf/CosmicArmor-ApplicationSecurity.pdf" class="btn btn-outline" download style="margin-top: 15px;">Download PDF</a>
+                     </div>
+                </div>
+          </div>
+     </section>
 
     <!-- Testimonials Section -->
     <!-- <section class="testimonials" id="testimonials">
