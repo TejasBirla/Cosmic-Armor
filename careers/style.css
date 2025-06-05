@@ -1,0 +1,182 @@
+/* Careers Page Styles */
+
+/* Hero Section */
+.hero {
+    padding: 160px 0 100px;
+    background: linear-gradient(180deg, #e8ebe7 0%, #0c2b02 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    color: var(--primary);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin-bottom: 30px;
+}
+
+.hero a.btn {
+    margin-top: 20px;
+}
+
+/* Open Positions Section */
+.open-positions {
+    padding: 100px 0;
+    background: var(--light-gray);
+}
+
+.open-positions h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--dark);
+}
+
+.position-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.position-item {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.position-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.position-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-dark);
+}
+
+.position-item p {
+    margin-bottom: 15px;
+    color: var(--gray);
+}
+
+/* Why Join Section */
+.why-join {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.why-join h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--dark);
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: var(--secondary);
+}
+
+.benefits-list i {
+    color: var(--success);
+    font-size: 1.2rem;
+}
+
+/* Application Process Section */
+.application-process {
+    padding: 100px 0;
+    background: var(--light-gray);
+}
+
+.application-process h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--dark);
+}
+
+.application-process p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin-bottom: 40px;
+}
+
+.apply-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apply-form .form-group {
+    margin-bottom: 20px;
+}
+
+.apply-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--dark);
+}
+
+.apply-form input,
+.apply-form textarea,
+.apply-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--dark);
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.apply-form input:focus,
+.apply-form textarea:focus,
+.apply-form select:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 5px rgba(24, 63, 1, 0.5);
+}
+
+.apply-form textarea {
+    resize: vertical;
+}
+
+.apply-form .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: var(--white);
+    background: var(--primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.apply-form .btn:hover {
+    background: var(--primary-dark);
+}
