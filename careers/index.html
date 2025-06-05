@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Armor | Enterprise Cloud and Application Security Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../cosmicarmorlogo.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <!--<a href="#" class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    Cosmic<span>Armor</span>
+                </a>-->
+                <img src="../cosmic-armor-rev.png" alt="Cosmic Armor Logo" class="logo"
+                    style="height: 50px; width: auto;">
+                <div class="nav-links">
+                    <a href="../index.html#features">Features</a>
+                    <a href="../index.html#services">Solutions</a>
+                    <a href="../index.html#resources">Resources</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+                <div class="nav-cta">
+                    <a href="#" class="btn btn-outline">Sign In</a>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Join Our Team</h1>
+                <p>At Cosmic Armor, we are always looking for talented individuals to join our mission of securing the
+                    cloud.</p>
+                <a href="#open-positions" class="btn">View Open Positions</a>
+            </div>
+        </section>
+
+        <section id="open-positions" class="open-positions">
+            <div class="container">
+                <h2>Open Positions</h2>
+                <div class="position-list">
+                    <div class="position-item">
+                        <h3>Cloud Security Engineer</h3>
+                        <p>Location: Remote</p>
+                        <p>We are looking for a Cloud Security Engineer to help us secure our cloud infrastructure.</p>
+                        <a href="#apply-form" class="btn btn-outline">Apply Now</a>
+                    </div>
+                    <div class="position-item">
+                        <h3>Kubernetes Security Specialist</h3>
+                        <p>Location: Remote</p>
+                        <p>Join us as a Kubernetes Security Specialist to enhance our container security practices.</p>
+                        <a href="#apply-form" class="btn btn-outline">Apply Now</a>
+                    </div>
+                    <div class="position-item">
+                        <h3>DevSecOps Engineer</h3>
+                        <p>Location: Remote</p>
+                        <p>We are seeking a DevSecOps Engineer to integrate security into our development processes.</p>
+                        <a href="#apply-form" class="btn btn-outline">Apply Now</a>
+                    </div>
+                    <div class="position-item">
+                        <h3>Product Manager</h3>
+                        <p>Location: Remote</p>
+                        <p>We are looking for a Product Manager to lead our product development efforts.</p>
+                        <a href="#apply-form" class="btn btn-outline">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <form id="apply-form" class="apply-form" onsubmit="return submitForm()">
+            <div class="container">
+            <h2>Apply Now</h2>
+            <p>Fill out the form below to apply for a position at Cosmic Armor.</p>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cover-letter">Cover Letter</label>
+                <textarea id="cover-letter" name="cover-letter" rows="4" required></textarea>
+            </div>
+            <div class="form-group" style=" display: flex; flex-direction: column;">
+                <label for="linkedin">LinkedIn Profile (optional)</label>
+                <input type="url" id="linkedin" name="linkedin">
+            </div>
+            <div class="form-group">
+                <label for="portfolio">Portfolio or GitHub (optional)</label>
+                <input type="url" id="portfolio" name="portfolio">
+            </div>
+            <div class="form-group">
+                <label for="position">Position Applying For</label>
+                <select id="position" name="position" required>
+                <option value="" disabled selected>Select a position</option>
+                <option value="cloud-security-engineer">Cloud Security Engineer</option>
+                <option value="kubernetes-security-specialist">Kubernetes Security Specialist</option>
+                <option value="devsecops-engineer">DevSecOps Engineer</option>
+                <option value="product-manager">Product Manager</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"
+                placeholder="Why do you want to join Cosmic Armor?"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="resume">Resume (PDF)</label>
+                <input type="file" id="resume" name="resume" accept=".pdf" required>
+            </div>
+            <button type="submit" class="btn">Submit Application</button>
+            <div id="success-message" style="display: none; color: green; margin-top: 10px;">
+                Thank you for your application! We appreciate your interest in joining Cosmic Armor.
+            </div>
+            </div>
+        </form>
+        <script>
+            function submitForm() {
+                // Basic form validation
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var coverLetter = document.getElementById('cover-letter').value;
+                var position = document.getElementById('position').value;
+                if (!name || !email || !coverLetter || position === "") {
+                    alert("Please fill in all required fields.");
+                    return false;
+                }
+
+                // Simulate form submission (replace with actual submission logic)
+                // For demonstration purposes, just show the success message
+                document.getElementById('success-message').style.display = 'block';
+
+                // Prevent the default form submission behavior
+                return false;
+            }
+        </script>
+
+        <section id="why-join" class="why-join">
+            <div class="container">
+                <h2>Why Join Cosmic Armor?</h2>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-check"></i> Competitive salary and benefits</li>
+                    <li><i class="fas fa-check"></i> Flexible work environment</li>
+                    <li><i class="fas fa-check"></i> Opportunities for growth and development</li>
+                    <li><i class="fas fa-check"></i> Work with cutting-edge technology</li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <!--<a href="#" class="logo" style="color: white; margin-bottom: 20px; display: block;">
+                        <i class="fas fa-shield-alt"></i>
+                        Cosmic<span style="color: #93c5fd;">Armor</span>
+                    </a>-->
+                    <img src="../cosmic-rev.png" alt="Cosmic Armor Logo" class="logo"
+                        style="height: 50px; width: auto; margin-bottom: 20px; color: white; display: block;">
+                    <p>Advanced cloud security solutions for the modern enterprise. Real-time threat detection and
+                        automated remediation.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Solutions</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Cloud Security (CSPM)</a></li>
+                        <li><a href="#">Identity Management (CIEM)</a></li>
+                        <li><a href="#">Kubernetes Security (KSPM)</a></li>
+                        <li><a href="#">Attack Path Detection</a></li>
+                        <li><a href="#">Application Security (AppSec)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#about">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Plot No. 338, Phase 4, Udyog Vihar, Sector 19 Gurugram
+                            122016</li>
+                        <!-- <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>-->
+                        <li><i class="fas fa-envelope"></i> sales@cosmicarmor.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cosmic Armor Technologies, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
