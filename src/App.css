@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brand-primary: #8DE012
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 76px;
+}
