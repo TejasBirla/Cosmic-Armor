@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "../components/landing/Navbar.jsx";
-import Hero from "../components/landing/Hero.jsx";
+import Navbar from "../components/Landing/Navbar.jsx";
+import Hero from "../components/Landing/Hero.jsx";
 import AdvancedCapabilities from "../components/Landing/AdvancedCapabilities.jsx";
 import CloudSecurity from "../components/Landing/CloudSecurity.jsx";
-// import CNAPPPortfolio from "../components/Landing/CNAPPPortfolio.jsx";
 import Resources from "../components/Landing/Resources.jsx";
 import CTASection from "../components/Landing/CTASection.jsx";
-// import WhyChooseUs from "../components/Landing/WhyChooseUs.jsx";
 import AboutSection from "../components/Landing/AboutSection.jsx";
 import Footer from "../components/Landing/Footer.jsx";
+// import CNAPPPortfolio from "../components/Landing/CNAPPPortfolio.jsx";
+// import WhyChooseUs from "../components/Landing/WhyChooseUs.jsx";
 
 export default function LandingPage() {
   return (
