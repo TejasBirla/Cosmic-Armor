@@ -11,3 +11,13 @@ html {
 section {
     scroll-margin-top: 76px;
 }
+
+::selection {
+    background-color: #8DE012;
+    color: #000000;
+}
+
+::-moz-selection {
+    background-color: #8DE012;
+    color: #000000;
+}
