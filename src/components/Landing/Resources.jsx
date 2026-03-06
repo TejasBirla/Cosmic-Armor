@@ -92,7 +92,6 @@
 //   );
 // }
 
-
 import React from "react";
 import bgImage from "../../assets/images/sec-2-img.png";
 import tickIcon from "../../assets/icons/tick-icon.png";
@@ -104,8 +103,6 @@ import icon3 from "../../assets/icons/resource-icon-3.png";
 import icon_1 from "../../assets/icons/why-us-icon-1.png";
 import icon_2 from "../../assets/icons/why-us-icon-2.png";
 import icon_3 from "../../assets/icons/why-us-icon-3.png";
-
-/* ---------------- CNAPP PORTFOLIO ---------------- */
 
 const portfolioCards = [
   {
@@ -140,8 +137,6 @@ const portfolioCards = [
   },
 ];
 
-/* ---------------- RESOURCES ---------------- */
-
 const resources = [
   {
     icon: icon1,
@@ -159,8 +154,6 @@ const resources = [
     desc: "Get insights into securing your applications throughout the development lifecycle.",
   },
 ];
-
-/* ---------------- WHY CHOOSE US ---------------- */
 
 const cards = [
   {
@@ -183,7 +176,8 @@ const cards = [
 export default function Resources() {
   return (
     <section
-      className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-16"
+      className="relative py-14 sm:py-16 md:py-20
+                 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-14 2xl:px-20"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
@@ -191,40 +185,43 @@ export default function Resources() {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 z-0 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-black/50 z-0 pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        {/* ---------------- CNAPP PORTFOLIO ---------------- */}
-
-        <div className="border-l-[3px] border-brand-primary pl-4 mb-12">
-          <h2 className="text-white text-[26px] sm:text-[30px] font-bold leading-snug mb-2">
-            Our Advanced CNAPP Portfolio with
-            <br className="hidden sm:block" />
+      <div className="relative z-10">
+        {/* ── CNAPP PORTFOLIO ── */}
+        <div className="border-l-[3px] border-brand-primary pl-4 mb-10 sm:mb-12">
+          <h2
+            className="text-white font-bold leading-snug mb-2
+                         text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px]"
+          >
+            Our Advanced CNAPP Portfolio with <br className="hidden sm:block" />
             hyperautomation security
           </h2>
-
-          <p className="text-white text-[16px]">
+          <p className="text-white text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">
             End-to-end protection for your cloud-native infrastructure
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 sm:mb-20 md:mb-24">
           {portfolioCards.map((card, i) => (
             <div
               key={i}
-              className="bg-white/90 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-200"
+              className="bg-[#E9FFD8] rounded-xl shadow-lg hover:shadow-2xl transition-all duration-200"
             >
               <div className="bg-[#AFCCAA] rounded-t-xl px-6 py-4">
-                <h3 className="text-lg sm:text-xl font-semibold">
+                <h3 className="text-[16px] sm:text-[18px] md:text-[19px] font-semibold">
                   {card.title}
                 </h3>
               </div>
-
               <ul className="px-6 py-6 space-y-4">
                 {card.items.map((item, j) => (
                   <li key={j} className="flex items-start gap-3">
-                    <img src={tickIcon} alt="tick" className="w-5 h-5 mt-1" />
-                    <span className="text-black text-[15px] sm:text-[16px] leading-[1.8]">
+                    <img
+                      src={tickIcon}
+                      alt="tick"
+                      className="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span className="text-black text-[13px] sm:text-[14px] md:text-[15px] leading-[1.8]">
                       {item}
                     </span>
                   </li>
@@ -234,46 +231,48 @@ export default function Resources() {
           ))}
         </div>
 
-        {/* ---------------- RESOURCES ---------------- */}
-
-        <div className="border-l-[3px] border-brand-primary pl-4 mb-12">
-          <h2 className="text-white text-[26px] sm:text-[30px] font-bold mb-2">
+        {/* ── RESOURCES ── */}
+        <div className="border-l-[3px] border-brand-primary pl-4 mb-10 sm:mb-12">
+          <h2
+            className="text-white font-bold mb-2
+                         text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px]"
+          >
             Resources
           </h2>
-
-          <p className="text-white text-[16px] max-w-md">
+          <p className="text-white text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] max-w-md">
             Explore our comprehensive resources for Cloud Security, CloudShield,
             and Application Security.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16 sm:mb-20 md:mb-24">
           {resources.map((r, i) => (
             <div
               key={i}
               className="group rounded-lg p-7 border border-white/[0.08]
-              bg-gray-500/20 backdrop-blur-md flex flex-col justify-between items-center
-              transition-all duration-300 hover:scale-105 hover:-translate-y-1
-              hover:shadow-[0_8px_20px_rgba(0,255,0,0.15)]
-              hover:bg-[#0D21119C] h-[360px]"
+                         bg-gray-500/20 backdrop-blur-md flex flex-col justify-between items-center
+                         transition-all duration-300 hover:scale-105 hover:-translate-y-1
+                         hover:shadow-[0_8px_20px_rgba(0,255,0,0.15)]
+                         hover:bg-[#0D21119C] h-[350px] sm:h-[360px]"
             >
-              <img src={r.icon} alt={r.title} className="w-14 h-14" />
-
+              <img
+                src={r.icon}
+                alt={r.title}
+                className="w-12 h-12 sm:w-14 sm:h-14"
+              />
               <div className="flex flex-col items-center text-center flex-1 justify-center">
-                <h3 className="text-white text-[20px] font-semibold">
+                <h3 className="text-white text-[17px] sm:text-[19px] md:text-[20px] font-semibold">
                   {r.title}
                 </h3>
-
-                <p className="text-white text-[16px] mt-6 max-w-[240px]">
+                <p className="text-white text-[13px] sm:text-[14px] md:text-[16px] mt-4 sm:mt-6 max-w-[240px]">
                   {r.desc}
                 </p>
               </div>
-
               <button
                 className="mt-auto px-6 py-2 text-sm font-semibold rounded-sm
-                bg-transparent text-white border border-white transition-colors
-                duration-300 group-hover:bg-brand-primary group-hover:text-black
-                group-hover:border-transparent cursor-pointer"
+                                 bg-transparent text-white border border-white transition-colors
+                                 duration-300 group-hover:bg-brand-primary group-hover:text-black
+                                 group-hover:border-transparent cursor-pointer"
               >
                 Download PDF
               </button>
@@ -281,16 +280,17 @@ export default function Resources() {
           ))}
         </div>
 
-        {/* ---------------- WHY CHOOSE US ---------------- */}
-
-        <div className="border-l-[3px] border-brand-primary pl-4 mb-12">
-          <h2 className="text-white md:text-[32px] font-bold">
+        {/* ── WHY CHOOSE US ── */}
+        <div className="border-l-[3px] border-brand-primary pl-4 mb-10 sm:mb-12">
+          <h2
+            className="text-white font-bold
+                         text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px]"
+          >
             Why Choose Cosmic Armor?
           </h2>
-
-          <p className="text-white text-[17px] mt-2 max-w-md">
-            Explore our comprehensive resources for Cloud Security, CloudShield,
-            and Application Security
+          <p className="text-white text-[14px] sm:text-[15px] md:text-[16px] mt-2 max-w-md">
+            We empower enterprises with the most advanced cloud security
+            solutions
           </p>
         </div>
 
@@ -298,20 +298,21 @@ export default function Resources() {
           {cards.map((card, i) => (
             <div
               key={i}
-              className="bg-[#E9FFD8] rounded-xl px-7 py-7
-              transition-transform duration-300 hover:scale-105"
+              className="bg-[#E9FFD8] rounded-xl px-6 sm:px-7 py-6 sm:py-7
+                         transition-transform duration-300 hover:scale-105"
             >
               <img
                 src={card.icon}
                 alt={card.title}
-                className="w-12 h-12 mb-5"
+                className="w-10 h-10 sm:w-12 sm:h-12 mb-4 sm:mb-5"
               />
-
-              <h3 className="text-black text-[22px] font-semibold mb-3">
+              <h3
+                className="text-black font-semibold mb-3
+                             text-[18px] sm:text-[20px] md:text-[22px]"
+              >
                 {card.title}
               </h3>
-
-              <p className="text-black text-[16px] leading-relaxed max-w-80">
+              <p className="text-black text-[13px] sm:text-[14px] md:text-[16px] leading-relaxed font-medium">
                 {card.desc}
               </p>
             </div>
