@@ -1,97 +1,3 @@
-// import React from "react";
-// import bgImage from "../../assets/images/sec-2-img.png";
-// import icon1 from "../../assets/icons/resource-icon-1.png";
-// import icon2 from "../../assets/icons/resource-icon-2.png";
-// import icon3 from "../../assets/icons/resource-icon-3.png";
-
-// const resources = [
-//   {
-//     icon: icon1,
-//     title: "Cloud Security Data Sheet",
-//     desc: "Learn about our cloud security solutions and how they can protect your organization.",
-//   },
-//   {
-//     icon: icon2,
-//     title: "Runtime Protection Data Sheet",
-//     desc: "Discover the features and benefits of Runtime Protection for your cloud infrastructure.",
-//   },
-//   {
-//     icon: icon3,
-//     title: "Application Security Data Sheet",
-//     desc: "Get insights into securing your applications throughout the development lifecycle.",
-//   },
-// ];
-
-// export default function Resources() {
-//   return (
-//       <section
-//         className="relative py-14 sm:py-20 px-4 sm:px-6 lg:px-15"
-//         style={{
-//           backgroundImage: `url(${bgImage})`,
-//           backgroundSize: "cover",
-//           backgroundPosition: "center",
-//         }}
-//       >
-//         {/* Overlay */}
-//         <div className="absolute inset-0 bg-black/50 z-0 pointer-events-none"></div>
-
-//         <div className="max-w-7xl mx-auto relative z-10">
-//           {/* Section Header */}
-//           <div className="border-l-[3px] border-brand-primary pl-4 mb-12">
-//             <h2 className="text-white text-[24px] sm:text-[28px] md:text-[30px] font-bold mb-2 leading-tight">
-//               Resources
-//             </h2>
-//             <p className="text-white text-[15px] sm:text-[16px] md:text-[17px] leading-relaxed max-w-md">
-//               Explore our comprehensive resources for Cloud Security,
-//               CloudShield, and Application Security.
-//             </p>
-//           </div>
-
-//           {/* Cards Grid */}
-//           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-//             {resources.map((r, i) => (
-//               <div
-//                 key={i}
-//                 className="
-//                 group rounded-lg p-6 sm:p-7 border border-white/[0.08]
-//                 bg-gray-500/20 backdrop-blur-md
-//                 flex flex-col justify-between items-center
-//                 transform transition-all duration-300
-//                 hover:scale-105 hover:-translate-y-1
-//                 hover:shadow-[0_8px_20px_rgba(0,255,0,0.15)]
-//                 hover:bg-[#0D21119C]
-//                 h-[340px] sm:h-[380px] md:h-[380px]
-//                 "
-//               >
-//                 {/* Icon */}
-//                 <img
-//                   src={r.icon}
-//                   alt={r.title}
-//                   className="w-14 h-14 sm:w-16 sm:h-16 object-contain"
-//                 />
-
-//                 {/* Title & Description */}
-//                 <div className="flex flex-col items-center text-center mt-2 flex-1 justify-center">
-//                   <h3 className="text-white text-[18px] sm:text-[20px] font-semibold leading-snug">
-//                     {r.title}
-//                   </h3>
-//                   <p className="text-white text-[16px] leading-relaxed mt-6 max-w-[220px] sm:max-w-[240px] md:max-w-[260px] text-center">
-//                     {r.desc}
-//                   </p>
-//                 </div>
-
-//                 {/* Button */}
-//                 <button className="mt-auto px-6 py-2 text-sm font-semibold rounded-sm bg-transparent text-white border border-white transition-colors duration-300 group-hover:bg-brand-primary group-hover:text-black group-hover:border-transparent cursor-pointer">
-//                   Download PDF
-//                 </button>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-//   );
-// }
-
 import React from "react";
 import bgImage from "../../assets/images/sec-2-img.png";
 import tickIcon from "../../assets/icons/tick-icon.png";
@@ -142,16 +48,19 @@ const resources = [
     icon: icon1,
     title: "Cloud Security Data Sheet",
     desc: "Learn about our cloud security solutions and how they can protect your organization.",
+    pdf: "/pdfs/ca-cloud-security.pdf",
   },
   {
     icon: icon2,
     title: "Runtime Protection Data Sheet",
     desc: "Discover the features and benefits of Runtime Protection for your cloud infrastructure.",
+    pdf: "/pdfs/ca-real-time-sec.pdf",
   },
   {
     icon: icon3,
     title: "Application Security Data Sheet",
     desc: "Get insights into securing your applications throughout the development lifecycle.",
+    pdf: "/pdfs/ca-application-security.pdf",
   },
 ];
 
@@ -268,14 +177,16 @@ export default function Resources() {
                   {r.desc}
                 </p>
               </div>
-              <button
-                className="mt-auto px-6 py-2 text-sm font-semibold rounded-sm
-                                 bg-transparent text-white border border-white transition-colors
-                                 duration-300 group-hover:bg-brand-primary group-hover:text-black
-                                 group-hover:border-transparent cursor-pointer"
-              >
-                Download PDF
-              </button>
+              <a href={r.pdf} download>
+                <button
+                  className="mt-auto px-6 py-2 text-sm font-semibold rounded-sm
+                bg-transparent text-white border border-white transition-colors
+                duration-300 group-hover:bg-brand-primary group-hover:text-black
+                group-hover:border-transparent cursor-pointer"
+                >
+                  Download PDF
+                </button>
+              </a>
             </div>
           ))}
         </div>

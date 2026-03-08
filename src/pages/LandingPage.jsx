@@ -7,8 +7,6 @@ import Resources from "../components/Landing/Resources.jsx";
 import CTASection from "../components/Landing/CTASection.jsx";
 import AboutSection from "../components/Landing/AboutSection.jsx";
 import Footer from "../components/Landing/Footer.jsx";
-// import CNAPPPortfolio from "../components/Landing/CNAPPPortfolio.jsx";
-// import WhyChooseUs from "../components/Landing/WhyChooseUs.jsx";
 
 export default function LandingPage() {
   return (
@@ -21,9 +19,7 @@ export default function LandingPage() {
       </section>
 
       <CloudSecurity />
-      {/* <CNAPPPortfolio /> */}
       <Resources />
-      {/* <WhyChooseUs /> */}
       <CTASection />
 
       <section id="about">
