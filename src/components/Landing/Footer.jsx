@@ -10,8 +10,11 @@ const solutions = [
   "Attack Path Detection",
   "Application Security (AppSec)",
 ];
-
-const company = ["About Us", "Careers", "Blog", "Partners", "Press"];
+const company = [
+  { label: "About Us", href: "#about" },
+  { label: "Careers", href: "#careers" },
+  { label: "Blog", href: "#resources" },
+];
 
 export default function Footer() {
   // const [email, setEmail] = useState("");
@@ -78,7 +81,7 @@ export default function Footer() {
                   {solutions.map((s) => (
                     <li key={s}>
                       <a
-                        href="#"
+                        href="#solutions"
                         className="text-white/60 text-[14px] hover:text-white transition-colors pl-3"
                       >
                         {s}
@@ -97,12 +100,12 @@ export default function Footer() {
                 </div>
                 <ul className="space-y-3">
                   {company.map((c) => (
-                    <li key={c}>
+                    <li key={c.label}>
                       <a
-                        href="#"
+                        href={c.href}
                         className="text-white/60 text-[14px] hover:text-white transition-colors pl-3"
                       >
-                        {c}
+                        {c.label}
                       </a>
                     </li>
                   ))}

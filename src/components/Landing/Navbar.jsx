@@ -32,14 +32,17 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Desktop Buttons */}
-          <div className="hidden md:flex items-center gap-2 lg:gap-3">
-            <button className="cursor-pointer px-3 lg:px-5 py-1.5 lg:py-2 text-xs lg:text-sm font-medium text-white border border-white/40 rounded hover:border-white/80 hover:bg-white/5 transition-all duration-200 tracking-wide whitespace-nowrap">
-              Sign In
-            </button>
-            <button className="cursor-pointer px-3 lg:px-5 py-1.5 lg:py-2 text-xs lg:text-sm font-bold text-black bg-brand-primary rounded hover:brightness-110 transition-all duration-200 tracking-wide shadow-[0_0_20px_rgba(141,224,18,0.35)] whitespace-nowrap">
-              Get Started
-            </button>
+          {/* Desktop Button */}
+          <div className="hidden md:flex items-center gap-1 lg:gap-2">
+            <a
+              href="https://app.cosmicarmor.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="cursor-pointer px-3 lg:px-5 py-1.5 lg:py-2 text-xs lg:text-sm font-bold text-black bg-brand-primary rounded hover:brightness-110 transition-all duration-200 tracking-wide shadow-[0_0_20px_rgba(141,224,18,0.35)] whitespace-nowrap">
+                Get Started
+              </button>
+            </a>
           </div>
 
           {/* Mobile Hamburger */}
@@ -82,12 +85,15 @@ export default function Navbar() {
           ))}
 
           <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
-            <button className="w-full py-2.5 text-sm font-medium text-white border border-white/40 rounded hover:border-white/80 transition-all">
-              Sign In
-            </button>
-            <button className="w-full py-2.5 text-sm font-bold text-black bg-brand-primary rounded hover:brightness-110 transition-all shadow-[0_0_20px_rgba(141,224,18,0.35)]">
-              Get Started
-            </button>
+            <a
+              href="https://app.cosmicarmor.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="w-full py-2.5 text-sm font-bold text-black bg-brand-primary rounded hover:brightness-110 transition-all shadow-[0_0_20px_rgba(141,224,18,0.35)]">
+                Get Started
+              </button>
+            </a>
           </div>
         </div>
       </div>
