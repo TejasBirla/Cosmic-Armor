@@ -13,24 +13,14 @@ export default function LandingPage() {
     <>
       <Navbar />
       <Hero />
-
-      <section id="features">
-        <AdvancedCapabilities />
-      </section>
-
+      <AdvancedCapabilities />
       <CloudSecurity />
       <Resources />
       <CTASection />
-
-      <section id="about">
-        <AboutSection />
-      </section>
-
-      <section id="solutions">
+      <AboutSection />
+      <section id="contact">
         <Footer />
       </section>
-
-      <section id="contact"></section>
     </>
   );
 }
