@@ -84,9 +84,8 @@ const cards = [
 
 export default function Resources() {
   return (
-    <section
-      className="relative py-14 sm:py-16 md:py-20
-                 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-14 2xl:px-20"
+    <div
+      className="relative"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
@@ -96,12 +95,17 @@ export default function Resources() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 z-0 pointer-events-none" />
 
-      <div className="relative z-10">
-        {/* ── CNAPP PORTFOLIO ── */}
+      {/* ── CNAPP PORTFOLIO ── */}
+      <section
+        id="solutions"
+        className="relative z-10
+                   py-14 sm:py-16 md:py-20
+                   px-4 sm:px-6 md:px-8 lg:px-10 xl:px-14 2xl:px-20"
+      >
         <div className="border-l-[3px] border-brand-primary pl-4 mb-10 sm:mb-12">
           <h2
             className="text-white font-bold leading-snug mb-2
-                         text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px]"
+                       text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px]"
           >
             Our Advanced CNAPP Portfolio with <br className="hidden sm:block" />
             hyperautomation security
@@ -111,7 +115,7 @@ export default function Resources() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 sm:mb-20 md:mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {portfolioCards.map((card, i) => (
             <div
               key={i}
@@ -139,12 +143,19 @@ export default function Resources() {
             </div>
           ))}
         </div>
+      </section>
 
-        {/* ── RESOURCES ── */}
+      {/* ── RESOURCES ── */}
+      <section
+        id="resources"
+        className="relative z-10
+                   pb-14 sm:pb-16 md:pb-20
+                   px-4 sm:px-6 md:px-8 lg:px-10 xl:px-14 2xl:px-20"
+      >
         <div className="border-l-[3px] border-brand-primary pl-4 mb-10 sm:mb-12">
           <h2
             className="text-white font-bold mb-2
-                         text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px]"
+                       text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px]"
           >
             Resources
           </h2>
@@ -154,7 +165,7 @@ export default function Resources() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16 sm:mb-20 md:mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {resources.map((r, i) => (
             <div
               key={i}
@@ -180,9 +191,9 @@ export default function Resources() {
               <a href={r.pdf} download>
                 <button
                   className="mt-auto px-6 py-2 text-sm font-semibold rounded-sm
-                bg-transparent text-white border border-white transition-colors
-                duration-300 group-hover:bg-brand-primary group-hover:text-black
-                group-hover:border-transparent cursor-pointer"
+                             bg-transparent text-white border border-white transition-colors
+                             duration-300 group-hover:bg-brand-primary group-hover:text-black
+                             group-hover:border-transparent cursor-pointer"
                 >
                   Download PDF
                 </button>
@@ -190,12 +201,19 @@ export default function Resources() {
             </div>
           ))}
         </div>
+      </section>
 
-        {/* ── WHY CHOOSE US ── */}
+      {/* ── WHY CHOOSE US ── */}
+      <section
+        id="why-us"
+        className="relative z-10
+                   pb-14 sm:pb-16 md:pb-20
+                   px-4 sm:px-6 md:px-8 lg:px-10 xl:px-14 2xl:px-20"
+      >
         <div className="border-l-[3px] border-brand-primary pl-4 mb-10 sm:mb-12">
           <h2
             className="text-white font-bold
-                         text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px]"
+                       text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px]"
           >
             Why Choose Cosmic Armor?
           </h2>
@@ -219,7 +237,7 @@ export default function Resources() {
               />
               <h3
                 className="text-black font-semibold mb-3
-                             text-[18px] sm:text-[20px] md:text-[22px]"
+                           text-[18px] sm:text-[20px] md:text-[22px]"
               >
                 {card.title}
               </h3>
@@ -229,7 +247,7 @@ export default function Resources() {
             </div>
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
